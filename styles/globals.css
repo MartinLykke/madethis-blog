@@ -14,3 +14,77 @@ a {
 * {
   box-sizing: border-box;
 }
+:root {
+  /* Primary colors */
+  --clr-primary-bluedark: #1a3644;
+  --clr-primary-blue: #1074a7;
+  --clr-primary-orange: #ff7c3a;
+
+  /* Made this blue */
+  --clr-primary-2: #075278;
+  --clr-primary-4: #2e8fc0;
+  /* --clr-primary-5: #3ba8e; There is an error in the figma*/
+  --clr-primary-5: #3ba8e0;
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+
+  /* darkest grey */
+  --clr-grey-1: #18181b;
+  --clr-grey-2: #27272a;
+  --clr-grey-3: #3f3f46;
+  --clr-grey-4: #52525b;
+  /* lighter grey */
+  --clr-grey-5: #71717a;
+  --clr-grey-6: #a1a1aa;
+  --clr-grey-7: #d4d4d8;
+  --clr-grey-8: #e4e4e7;
+  --clr-grey-9: #f4f4f5;
+  --clr-grey-10: #fafafa;
+
+  --clr-white: #ffffff;
+  --clr-black: #000000;
+  /* Orange */
+  --clr-orange-1: #782800;
+  --clr-orange-2: #a43802;
+  --clr-orange-3: #c44a0d;
+  --clr-orange-4: #e46424;
+  /* Number 5 is primary */
+  --clr-orange-6: #ff9b53;
+  --clr-orange-7: #ff9b53;
+  --clr-orange-8: #ffba7a;
+
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  /* Spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.5rem;
+  --spacing-6: 2rem;
+  --spacing-7: 3rem;
+  --spacing-9: 4rem;
+
+  /* Type scale */
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-md: 1rem;
+  --font-lg: 1.125rem;
+  --font-xl: 1.25rem;
+  --font-2xl: 1.5rem;
+  --font-3xl: 1.75rem;
+  --font-4xl: 2.25rem;
+
+  --transition: all 0.3s linear;
+
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  --max-width: 1170px;
+  --fixed-width: 450px;
+}
