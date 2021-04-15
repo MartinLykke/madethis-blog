@@ -1,3 +1,4 @@
+import AddNewPost from "../components/AddNewPost";
 import BlogpostFeatured from "../components/BlogpostFeatured";
 import BlogpostList from "../components/BlogpostList";
 export default function Home({ blogposts }) {
@@ -7,6 +8,7 @@ export default function Home({ blogposts }) {
         <BlogpostFeatured blogposts={blogposts} />
       </div>
       <BlogpostList blogposts={blogposts} />
+      <AddNewPost />
     </div>
   );
 }
