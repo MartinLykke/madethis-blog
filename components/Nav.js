@@ -20,7 +20,10 @@ const Navb = () => {
           </a>
         </div>
         <div class="col-3 d-flex justify-content-end">
-          <a class="btn btn-sm btn-outline-primary " href="">
+          <a
+            class="btn btn-sm btn-outline-primary "
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          >
             <User />
             Sign up
           </a>

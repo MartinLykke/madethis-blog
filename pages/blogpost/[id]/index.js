@@ -1,15 +1,39 @@
 import Link from "next/link";
+import { ArrowLeft, Share2, ThumbsUp } from "react-feather";
 import Meta from "../../../components/Meta";
+
 const blogpost = ({ blogpost }) => {
+  let blogpostDate = blogpost.created_at;
+  blogpostDate = blogpostDate.substring(0, blogpostDate.length - 14);
   return (
     <>
-      <div>
+      <div className="mt-4">
         <Meta title={blogpost.title} />
-        <h1>{blogpost.title}</h1>
-        <p>{blogpost.sections[0].content}</p>
-        <br />
+
+        <article className="blog-post">
+          <h2 class="blog-post-title">{blogpost.title}</h2>
+          <p class="blog-post-meta">
+            Posted {blogpostDate} By{" "}
+            <a href="https://www.linkedin.com/company/madethisdk/">
+              {blogpost.author}
+            </a>
+          </p>
+
+          <p>{blogpost.sections[0].content}</p>
+          <hr></hr>
+        </article>
+        <button className="btn btn-success mb-5">
+          <ThumbsUp /> Like
+        </button>
+        <button className="btn btn-primary mb-5 ml-2">
+          <Share2 /> Share
+        </button>
+        <br></br>
         <Link href="/">
-          <button className="btn btn-primary">Tilbage</button>
+          <button className="btn btn-primary rounded-pill">
+            <ArrowLeft size={18} />
+            Back
+          </button>
         </Link>
       </div>
     </>
