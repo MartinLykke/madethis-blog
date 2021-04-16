@@ -1,4 +1,4 @@
-import postStyles from "../styles/BlogpostFT.module.css";
+import postStyles from "../styles/blogpostft.module.css";
 const BlogpostFeatured = ({ blogposts }) => {
   return (
     <>
