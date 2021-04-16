@@ -1,6 +1,6 @@
 import Link from "next/link";
 import navStyles from "../styles/Nav.module.css";
-import Image from "next/Image";
+import Image from "next/image";
 import { Navbar, Nav } from "react-bootstrap";
 import { Mail, User } from "react-feather";
 const Navb = () => {
