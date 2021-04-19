@@ -1,9 +1,10 @@
-import Link from "next/link";
 import navStyles from "../styles/Nav.module.css";
-import Image from "next/image";
-import { Navbar, Nav } from "react-bootstrap";
 import { Mail, User } from "react-feather";
+import { useState } from "react";
 const Navb = () => {
+  const firstname =
+    typeof window !== "undefined" ? localStorage.getItem("username") : null;
+
   return (
     <header className={navStyles.blogheader + "  py-3"} class="">
       <div class="row flex-nowrap justify-content-between align-items-center">
@@ -22,7 +23,8 @@ const Navb = () => {
         <div class="col-3 d-flex justify-content-end">
           <a class="btn btn-sm btn-outline-primary " href="/signup">
             <User />
-            Sign up
+            {!firstname && "Sign up"}
+            {firstname && localStorage.getItem("username")}
           </a>
         </div>
       </div>
