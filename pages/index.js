@@ -1,14 +1,17 @@
 import AddNewPost from "../components/AddNewPost";
 import BlogpostFeatured from "../components/BlogpostFeatured";
 import BlogpostList from "../components/BlogpostList";
+
 export default function Home({ blogposts }) {
+  const firstname =
+    typeof window !== "undefined" ? localStorage.getItem("username") : null;
   return (
     <div className="">
       <div className="container mt-5">
         <BlogpostFeatured blogposts={blogposts} />
       </div>
       <BlogpostList blogposts={blogposts} />
-      <AddNewPost />
+      {firstname && <AddNewPost />}
     </div>
   );
 }

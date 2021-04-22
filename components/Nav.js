@@ -1,10 +1,15 @@
 import navStyles from "../styles/Nav.module.css";
 import { Mail, User } from "react-feather";
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { LoginContext } from "../contexts/LoginContext";
+import ProfileBtn from "./ProfileBtn";
 const Navb = () => {
   const firstname =
     typeof window !== "undefined" ? localStorage.getItem("username") : null;
+  const [loginInfo] = useContext(LoginContext);
 
+  console.log("Navbar");
+  console.log(loginInfo);
   return (
     <header className={navStyles.blogheader + "  py-3"} class="">
       <div class="row flex-nowrap justify-content-between align-items-center">
@@ -21,11 +26,12 @@ const Navb = () => {
           </a>
         </div>
         <div class="col-3 d-flex justify-content-end">
-          <a class="btn btn-sm btn-outline-primary " href="/signup">
-            <User />
-            {!firstname && "Sign up"}
-            {firstname && localStorage.getItem("username")}
-          </a>
+          {firstname && <ProfileBtn firstname={firstname} />}
+          {!firstname && (
+            <a class="btn btn-sm btn-outline-primary " href="/signup">
+              <User /> Sign up
+            </a>
+          )}
         </div>
       </div>
     </header>
