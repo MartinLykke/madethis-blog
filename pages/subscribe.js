@@ -1,3 +1,4 @@
+import styles from "../styles/Subscribe.module.css";
 const subscribe = () => {
   return (
     <div>
@@ -17,11 +18,8 @@ const subscribe = () => {
             aria-describedby="emailHelp"
           ></input>
         </form>
-        <div className="w-50">
-          <button class="btn btn-primary mt-4 rounded-pill btn-block">
-            Subscribe
-          </button>
-        </div>
+
+        <a className={styles.subscribetbtn}>Sign me up!</a>
       </div>
     </div>
   );

@@ -1,0 +1,21 @@
+.mainbtn {
+  border: 2px solid transparent;
+  padding: var(--spacing-4) var(--spacing-9);
+  color: var(--clr-primary-orange);
+  border-color: var(--clr-primary-orange);
+  border-radius: 50rem !important;
+  font-weight: bold;
+}
+.mainbtn:hover {
+  color: var(--clr-orange-3);
+  border-color: var(--clr-orange-3);
+  text-decoration: none;
+  -webkit-transform: scale(0.95); /* Safari and Chrome */
+}
+.mainbtn:active {
+  -webkit-transform: scale(0.95); /* Safari and Chrome */
+  -moz-transform: scale(0.95); /* Firefox */
+  -ms-transform: scale(0.95); /* IE 9 */
+  -o-transform: scale(0.95); /* Opera */
+  transform: scale(0.95);
+}

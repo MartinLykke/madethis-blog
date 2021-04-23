@@ -1,11 +1,8 @@
+import styles from "../styles/AddNewPost.module.css";
 const AddNewPost = () => {
   return (
     <div className=" text-center">
-      <a
-        href="/createPost"
-        className="btn btn-primary-orange mt-4 rounded-pill text-white w-25 "
-      >
-        {" "}
+      <a href="/createPost" className={styles.mainbtn}>
         Write new post
       </a>
     </div>
